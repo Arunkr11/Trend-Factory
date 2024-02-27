@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.views.generic import View,DetailView
+from django.views.generic import View,DetailView,TemplateView
 from store.forms import RegistrationForm,LoginForm
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
@@ -54,3 +54,6 @@ class ProductDetailView(View):
         id = kwargs.get('pk')
         qs = Product.objects.get(id=id)
         return render(request,'product_detail.html',{"data":qs})
+    
+class HomeView(TemplateView):
+    template_name = 'base.html'
