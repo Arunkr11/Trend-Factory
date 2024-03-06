@@ -35,7 +35,7 @@
 
         <ul class="nav-list d-flex">
           <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
+            <a href="{%url 'index'%}" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="product.html" class="nav-link">Shop</a>
@@ -49,7 +49,7 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
-          <li class="icons d-flex">
+          <!-- <li class="icons d-flex">
             <a href="login.html" class="icon">
               <i class="bx bx-user"></i>
             </a>
@@ -60,15 +60,15 @@
               <i class="bx bx-heart"></i>
               <span class="d-flex">0</span>
             </div>
-            <a href="cart.html" class="icon">
+            <a href="{%url 'cart'%}" class="icon">
               <i class="bx bx-cart"></i>
               <span class="d-flex">0</span>
             </a>
-          </li>
+          </li> -->
         </ul>
 
         <div class="icons d-flex">
-          <a href="login.html" class="icon">
+          <a href="{%url 'signin'%}" class="icon">
             <i class="bx bx-user"></i>
           </a>
           <div class="icon">
@@ -78,9 +78,9 @@
             <i class="bx bx-heart"></i>
             <span class="d-flex">0</span>
           </div>
-          <a href="cart.html" class="icon">
+          <a href="{%url 'cart'%}" class="icon">
             <i class="bx bx-cart"></i>
-            <span class="d-flex">0</span>
+            <span class="d-flex">{{cart_count}}</span>
           </a>
         </div>
 

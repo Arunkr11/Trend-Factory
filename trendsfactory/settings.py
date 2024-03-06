@@ -63,6 +63,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'store.contex_processors.Dummy',
+                'store.contex_processors.basket_count',
             ],
         },
     },
