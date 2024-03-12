@@ -74,15 +74,17 @@
           <div class="icon">
             <i class="bx bx-search"></i>
           </div>
-          <div class="icon">
-            <i class="bx bx-heart"></i>
-            <span class="d-flex">0</span>
-          </div>
           <a href="{%url 'cart'%}" class="icon">
             <i class="bx bx-cart"></i>
             <span class="d-flex">{{cart_count}}</span>
           </a>
+          <div>
+            <a href="{%url 'signout'%}">
+              <i class='bx bxs-log-in-circle' ></i>
+            </a>
+          </div>
         </div>
+        
 
         <div class="hamburger">
           <i class="bx bx-menu-alt-left"></i>
